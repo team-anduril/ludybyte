@@ -1,3 +1,19 @@
+const backend = "http://localhost:3000";
+
+document.getElementById("login-login-button").addEventListener("click", e => 
+{
+	e.preventDefault();
+	fetch(backend + "/login").then(res => res.json()).then(json => alert(JSON.stringify(json)));
+});
+document.getElementById("signup-signup-button").addEventListener("click", e => 
+{
+	e.preventDefault();
+	let name = document.getElementById("signup-name").value;
+	let email = document.getElementById("signup-email").value;
+	let password = document.getElementById("signup-password").value;
+	let url = `${backend}/signup?name=${name}&email=${email}&password=${password}`
+	fetch(url).then(res => res.json()).then(json => alert(JSON.stringify(json)));
+});
 document.getElementById("login-signup-button").addEventListener("click", e => 
 {
 	e.preventDefault();

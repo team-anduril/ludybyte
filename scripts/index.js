@@ -1,4 +1,13 @@
-const backend = "http://localhost:3000";
+//const backend = "http://localhost:3000";
+const backend = "https://sleepy-woodland-98503.herokuapp.com";
+let headers = new Headers();
+
+  headers.append('Content-Type', 'application/json');
+  headers.append('Accept', 'application/json');
+  headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+  headers.append('Access-Control-Allow-Credentials', 'true');
+  headers.append('GET', 'POST', 'OPTIONS');
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 // SIGN UP
 document.getElementById("signup-signup-button").addEventListener("click", e => 
@@ -37,9 +46,9 @@ document.getElementById("login-login-button").addEventListener("click", e =>
 		e.preventDefault();
 	else
 		return;
-	let url = `${backend}/login?email=${email}&password=${password}`;
+	let url = `${proxyurl + backend}/login?email=${email}&password=${password}`;
 
-	fetch(url).then(res => res.json()).then(json => 
+	fetch(url, {headers: headers}).then(res => res.json()).then(json => 
 		{
 			if (json.code == 496)
 			{

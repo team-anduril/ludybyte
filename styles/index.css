@@ -1,3 +1,9 @@
+/* body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", 'Segoe UI', sans-serif;
+} */
 body
 {
     scroll-behavior: smooth;
@@ -241,3 +247,5 @@ hr
     background-color: rgb(150, 150, 150);
     padding-right: 50px;
 }
+
+/* Media queries */

@@ -35,7 +35,7 @@
           </p>
           <br />
           <p class="text-center">Don't have an account?</p>
-          <a class="login-signup-button text-center" href="register.html"
+          <a class="login-signup-button text-center" href="register.php"
             >SIGN UP</a
           >
         </div>

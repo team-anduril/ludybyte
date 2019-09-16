@@ -6,8 +6,7 @@ const fs = require('fs');
 const url = require('url');
 const qs = require('querystring');
 
-const port = 3000;
-const hostname = "localhost";
+const  hostname = "https://git.heroku.com/sleepy-woodland-98503.git";
 const usersPath = "./users.json";
 const APP_SECRET = "Not you business, no?";
 let users = [];
@@ -123,8 +122,8 @@ const server = http.createServer((req, res) =>
 	}
 });
 
-
-server.listen(port, () => 
+//const PORT = process.env.PORT
+server.listen(process.env.PORT || 3000, () => 
 {
-	console.log(`Server running at http://${hostname}:${port}/`)
+	console.log(`Server running at http://${hostname}/`)
 })

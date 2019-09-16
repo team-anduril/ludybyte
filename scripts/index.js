@@ -1,13 +1,15 @@
 //const backend = "http://localhost:3000";
-const backend = "https://sleepy-woodland-98503.herokuapp.com";
 let headers = new Headers();
+headers.append('Content-Type', 'application/json');
+headers.append('Accept', 'application/json');
+headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+headers.append('Access-Control-Allow-Credentials', 'true');
+headers.append('GET', 'POST', 'OPTIONS');
 
-  headers.append('Content-Type', 'application/json');
-  headers.append('Accept', 'application/json');
-  headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
-  headers.append('Access-Control-Allow-Credentials', 'true');
-  headers.append('GET', 'POST', 'OPTIONS');
+const backend = "https://sleepy-woodland-98503.herokuapp.com";
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
+// Ping heroku
+fetch(proxyurl + backend);
 
 // SIGN UP
 document.getElementById("signup-signup-button").addEventListener("click", e => 
@@ -15,7 +17,7 @@ document.getElementById("signup-signup-button").addEventListener("click", e =>
 	let name = document.getElementById("signup-name").value;
 	let email = document.getElementById("signup-email").value;
 	let password = document.getElementById("signup-password").value;
-	let url = `${backend}/signup?name=${name}&email=${email}&password=${password}`;
+	let url = `${proxyurl + backend}/signup?name=${name}&email=${email}&password=${password}`;
 
 	if (name.length && /\w+@\w/.test(email) && password.length)
 		e.preventDefault();
@@ -32,7 +34,7 @@ document.getElementById("signup-signup-button").addEventListener("click", e =>
 			else
 			{
 				// Edit this
-				alert("Sign up for: " + JSON.stringify(json));
+				alert("Successful sign up for: " + JSON.stringify(json));
 			}
 		}).catch(err => console.log(err));
 });
@@ -65,7 +67,7 @@ document.getElementById("login-login-button").addEventListener("click", e =>
 			else
 			{
 				// Edit this
-				alert("Login for: " + JSON.stringify(json));
+				alert("Successful login for: " + JSON.stringify(json));
 			}
 		}).catch(err => console.log(err));
 });

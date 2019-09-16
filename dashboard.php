@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="styles/dashboard.css" />
   </head>
   <body>
+      <?php session_start(); ?>
     <div class="navbar">
       <h1>LudyByte</h1>
-      <h3><a href="index.html">Logout</a></h3>
+      <h3><a href="logout.php">Logout</a></h3>
     </div>
-    <h1 class="text-center">Hello LudyByter!!</h1>
+    <h1 class="text-center">Hello <?php echo $_SESSION['user_name'] ?>!!</h1>
   </body>
 </html>

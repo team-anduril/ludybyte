@@ -1,0 +1,19 @@
+[
+  {
+    "oakbooks@gmail.com": {
+      "name": "Oakbooks",
+      "email": "oakbooks@gmail.com",
+      "password": "5f4dcc3b5aa765d61d8327deb882cf99"
+    },
+    "tommyopeters@gmail.com": {
+      "name": "Tommy O' Peters",
+      "email": "tommyopeters@gmail.com",
+      "password": "322ec7f4678168f22d0d61ae209fcfa0"
+    },
+    "master@gmail.com": {
+      "name": "Master",
+      "email": "master@gmail.com",
+      "password": "eb0a191797624dd3a48fa681d3061212"
+    }
+  }
+]

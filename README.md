@@ -1,8 +1,12 @@
 # LudyByte
 
-Team Anduril HNGi6 Stage 1 task
+Team Anduril HNGi6: alternative make
 
 
-## Contributing
+## How to run
 
-Please fork the repo and clone. then go to `frontend` or `backend` branch and work from there. Make sure you create your own branch first. Don't change anything on the available branches. When you're done making changes in your branch, commit and make a PR.
+App hosted on:
+https://jaycodist.github.io/anduril
+
+Node REST api hosted on: 
+https://sleepy-woodland-98503.herokuapp.com

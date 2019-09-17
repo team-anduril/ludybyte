@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="styles/dashboard.css" />
   </head>
   <body>
-      <?php session_start(); ?>
+      <?php session_start(); 
+        if(!isset($_SESSION['user_name']) || !isset($_SESSION['user_email'])){
+          header("Location: index.php");
+        } 
+      ?>
     <div class="navbar">
       <h1>LudyByte</h1>
       <h3><a href="logout.php">Logout</a></h3>

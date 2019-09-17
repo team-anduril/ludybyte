@@ -15,7 +15,7 @@
 
     <?php 
         session_start();
-        if(isset($_SESSION['user_name']) && $_SESSION['user_email']){
+        if(isset($_SESSION['user_name']) && isset($_SESSION['user_email'])){
             header("Location: dashboard.php");
         }
     ?>

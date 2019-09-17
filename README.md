@@ -10,6 +10,10 @@ LudyByte is a simple project with login and register features. Logged in users a
 
 When you open the app, you'll be prompted to login. If you don't have an account yet, you'll have the option to register after which you'll be redirected your dashboard welcoming you with your name. On successful login, you'll be redirected to a basic dashboard also which displays your name and a link to logout if you wish. If you're not logged in, you can't see a dashboard and when you logout, you'll be redirected once again to login.
 
+## Hosting
+
+LudyByte is hosted on Heroku and you can view the app [here](https://gentle-brook-72652.herokuapp.com/)
+
 ## Contributing
 
 This project requires a server. You can run a local server on your PC.

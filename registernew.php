@@ -53,7 +53,7 @@
                 file_put_contents("users.json", json_encode($u_database));
                 session_start();
                 $_SESSION['user_name'] = $user_name;
-                $_SESSION['user_email'] = $email;
+                $_SESSION['user_email'] = $user_email;
                 
                 header ("Location: dashboard.php");
                 

@@ -8,7 +8,7 @@ LudyByte is a simple project with login and register features. Logged in users a
 
 ## How LudyByte works
 
-When you open the app, you'll be prompted to login. If you don't have an account yet, you'll have the option to register after which you'll be redirected to login. On successful login, you'll be redirected to a basic dashboard which displays your name and a link to logout if you wish. If you're not logged in, you can't see a dashboard and when you logout, you'll be redirected once again to login.
+When you open the app, you'll be prompted to login. If you don't have an account yet, you'll have the option to register after which you'll be redirected your dashboard welcoming you with your name. On successful login, you'll be redirected to a basic dashboard also which displays your name and a link to logout if you wish. If you're not logged in, you can't see a dashboard and when you logout, you'll be redirected once again to login.
 
 ## Contributing
 

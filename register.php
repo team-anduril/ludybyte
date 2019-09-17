@@ -20,7 +20,7 @@
         <h1 class="text-center main-register-header">Hi, new LudyByter</h1>
         <p id="signup-intro">Enter your details to create a free account and begin your journey as a LudyByter</p>
         <p>Already have an account?</p>
-        <a class="signup-login-button text-center" href="login.php">SIGN IN</a>
+        <a class="signup-login-button text-center" href="index.php">SIGN IN</a>
      </div>
     </section>
     <section class="register-form">
